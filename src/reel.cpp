@@ -1,6 +1,7 @@
 #include"reel.h"
 #include<iostream>
 #include<vector>
+#include<string>
 #include<fstream>
 using namespace std;
 
@@ -9,6 +10,8 @@ int main() {
 vector<nombre> nombreR;
 //Valeur_R est un reel qui va servire plustard a stocké les valeurs entré
 float valeur_R;
+string q;
+string s;
 //on definit la fonction ostream
 ofstream f_reels;
 //On ouvre le fichier listeNombre.txt
@@ -37,7 +40,26 @@ for(int i=0; i<nombreR.size(); i++){
 cout<<nombreR[i].reel<<endl;
 }
 
+//supprimé une valeur souhaité
+cout<<"Tapez la vaeleur que vous souhaitez supprimer"<<endl;
+cin>>valeur_R;
 
+
+//for(int i=0; i<nombreR.size(); i++){
+//if(valeur_R== nombreR[i].reel){
+//vector<nombre>::iterator it=nombreR[i];
+//nombreR.remove(valeur_R);
+//cout<<"le nombre a été supprimé"<<endl;
+//}
+
+
+//Entré q pour quitté
+//cout<<"Tapez q pour sortir"<<endl;
+//cin>>s;
+//if(s==q){
+//system("exit");
+//}
+//else("taper q pour sortir");
 
 return 0;
 }
